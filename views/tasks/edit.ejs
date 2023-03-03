@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Task</title>
+</head>
+
+<body>
+    <h1>Edit Product</h1>
+    <form action="/tasks/<%=task._id%>?_method=PUT" method="POST">
+        <label for="name">task name : </label>
+        <input type="text" name="name" id="name" placeholder="task name" value="<%=task.name%>">
+        <button>Submit</button>
+    </form>
+
+    <a href="/tasks/">All</a>
+
+    <a href="/tasks/<%=task._id%>">Back</a>
+
+</body>
+
+</html>
